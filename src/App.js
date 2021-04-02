@@ -4,10 +4,8 @@ import "./App.css";
 import { VscChevronLeft, VscChevronRight } from "react-icons/vsc";
 
 function App() {
-  const [allData, setData] = useState(reviews);
+  const allData = reviews;
   const [index, setIndex] = useState(0);
-
-  
 
   useEffect(() => {
     const lastIndex = allData.length - 1;
